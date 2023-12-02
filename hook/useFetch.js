@@ -21,8 +21,7 @@ const options = {
       'X-RapidAPI-Host': 'jsearch.p.rapidapi.com'
     }
   };
-  console.log(`https://jsearch.p.rapidapi.com/${endpoint}`)
-
+  
   const fetchData = async () => {
     setIsLoading(true);
     try{
