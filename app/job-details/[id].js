@@ -56,7 +56,11 @@ const displayTabContent = () => {
         break;
     }
 }
-const onRefresh = () => {}
+const onRefresh = useCallback(() => {
+    setRefreshing(true);
+    refetch();
+    setRefreshing(false);
+}, [])
 
     return (
         <SafeAreaView style ={{flex: 1,
